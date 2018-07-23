@@ -1,0 +1,27 @@
+table.custom {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+table.custom * {
+  padding: 5px;
+}
+
+table.custom tbody {
+  color: white;
+  background-color: #9CB2FF;
+  text-align: center;
+}
+
+table.custom .col-title {
+  text-align: left;
+  background-color: #9B83E8;
+  font-weight: bold;
+  color: white;
+}
+
+table.custom th {
+  background-color: #9B83E8;
+  text-align: center;
+  color: white;
+}
