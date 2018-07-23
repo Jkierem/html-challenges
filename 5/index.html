@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple form - Challenge 5</title>
+    <style>
+      label {
+        user-select: none;
+      }
+
+      .flex-left {
+        margin: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input[type="submit"] {
+        margin-right: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+          <label for="first-name-input">First Name:</label>
+          <input name="first-name" id="first-name-input"/>
+        </p>
+        <p>
+          <label for="last-name-input">Last Name:</label>
+          <input name="last-name" id="last-name-input"/>
+        </p>
+        <p>
+          <label for="email-input">Email:</label>
+          <input name="email" type="email" id="email-input"/>
+        </p>
+        <p>
+          <label for="password-input">Password:</label>
+          <input type="password" name="password" id="password-input"/>
+        </p>
+        <p>
+          <label for="DOB-input">Date of Birth:</label>
+          <input type="date" name="DOB" id="DOB-input">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Preferences</legend>
+        <p>
+          <label>How should I call you?</label>
+        </p>
+        <p>
+          <label for="mr-radio">
+            <input id="mr-radio" type="radio" name="honorific" value="mr" checked>Mr.
+          </label>
+          <label for="ms-radio">
+            <input id="ms-radio" type="radio" name="honorific" value="ms">Ms.
+          </label>
+          <label for="mrs-radio">
+            <input id="mrs-radio" type="radio" name="honorific" value="mrs">Mrs.
+          </label>
+          <label for="sir-radio">
+            <input id="sir-radio" type="radio" name="honorific" value="sir">Sir
+          </label>
+        </p>
+        <p>
+          <label for="ct-combo">Coffee or Tea?</label>
+          <select name="ctn" id="ct-combo">
+            <option value="coffee">Coffee</option>
+            <option value="tea">Tea</option>
+            <option value="neither">Neither</option>
+          </select>
+        </p>
+        <p>
+          <label>What ice cream flavors do you like?</label>
+        </p>
+        <p>
+          <label for="flavor1-checkbox">
+            <input id="flavor1-checkbox" type="checkbox" name="flavor1" value="vanilla"> Vanilla
+          </label><br>
+          <label for="flavor2-checkbox">
+            <input id="flavor2-checkbox" type="checkbox" name="flavor2" value="chocolate"> Chocolate
+          </label><br>
+          <label for="flavor3-checkbox">
+            <input id="flavor3-checkbox" type="checkbox" name="flavor3" value="strawberry"> Strawberry
+          </label>
+        </p>
+        <p>
+          <label for="comment-textarea">Any Comments?</label>
+        </p>
+          <textarea id="comment-textarea" name="comments" rows="10" cols="50"></textarea>
+      </fieldset>
+      <div class="flex-left">
+        <input type="submit" value="Beam me up!">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </body>
+</html>
