@@ -1,0 +1,32 @@
+.navbar {
+  user-select: none;
+}
+
+.navbar__link {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.navbar__link:hover {
+  background-color: blue;
+  color: white;
+}
+
+.deadspace {
+  height: 1000px;
+}
+
+.footer {
+  user-select: none;
+}
+
+.footer__go-top {
+  text-decoration: none;
+}
+
+.footer__go-top:hover {
+  background-color: magenta;
+  color: white;
+}

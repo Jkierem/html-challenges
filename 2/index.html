@@ -3,37 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Google link - Challenge 2</title>
-    <style>
-      * {
-        user-select: none;
-      }
-
-      a {
-        margin: 10px;
-        text-decoration: none;
-        color: black;
-        padding: 5px;
-      }
-
-      a:hover {
-        background-color: blue;
-        color: white;
-      }
-
-      .deadspace {
-        height: 1000px;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-  	<div>
-      <a id="back" href="https://en.wikiversity.org/wiki/Web_Design/HTML_Challenges">HTML_Challenges</a>
-  		<a href="https://www.google.com/search?q=bienvenido+in+rumano">Google search</a>
-      <a href="#content">Go down a little</a>
-      <div class="deadspace"></div>
-      <div id="content">
-        Hi...<a href="#back">Yo can go now...</a>
-      </div>
-  	</div>
+  	<div id="nav" class="navbar">
+      <a class="navbar__link" href="https://en.wikiversity.org/wiki/Web_Design/HTML_Challenges">HTML_Challenges</a>
+  		<a class="navbar__link" href="https://www.google.com/search?q=bienvenido+in+rumano">Google search</a>
+      <a class="navbar__link" href="#footer">Go down a little</a>
+    </div>
+    <div class="deadspace"></div>
+    <div id="footer" class="footer">
+      Hi...<a class="footer__go-top" href="#nav">Yo can go now...</a>
+    </div>
   </body>
 </html>
