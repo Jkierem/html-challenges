@@ -1,0 +1,13 @@
+.signup-form__field-tag {
+  user-select: none;
+}
+
+.signup-form__actions {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signup-form__actions__submit {
+  margin-right: 5px;
+}
