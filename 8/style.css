@@ -1,49 +1,52 @@
-label {
+body {
+  margin: 0px;
+}
+
+.signup-form {
+  background-color: #EFEFFF;
+  height: 100%;
+}
+
+.signup-form__field-tag {
   user-select: none;
 }
 
-.flex-left {
+.signup-form__actions {
   margin: 10px;
   display: flex;
   justify-content: flex-start;
 }
 
-.cool-button {
+.signup-form__actions__button {
   background-color: lightBlue;
   border: none;
   padding: 5px;
+  margin: 5px;
   box-shadow: 1px 3px 3px #cccccc;
+  cursor: pointer;
 }
 
-.cool-button:hover {
+.signup-form__actions__button:hover {
   box-shadow: none;
   transform: translateY(3px);
 }
 
-.cool-button:active {
+.signup-form__actions__button:active {
   background-color: #83C7E8;
 }
 
-.cool-button:focus {
+.signup-form__actions__button:focus {
   outline: none;
 }
 
-input[type="submit"] {
-  margin-left: 5px;
-}
-
-html {
-  background-color: #EFEFFF
-}
-
-legend {
-  font-weight: bold;
-  color: navy;
-}
-
-fieldset {
+.signup-form__information-group {
   border: 2px groove navy;
   border-radius: 5px;
   margin-bottom: 10px;
   box-shadow: 2px 3px 4px #cccccc;
+}
+
+.signup-form__information-group__title {
+  font-weight: bold;
+  color: navy;
 }

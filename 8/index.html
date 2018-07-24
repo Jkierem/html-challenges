@@ -6,51 +6,51 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
-    <form action="mailto:juanmig8@hotmail.com" method="post">
-      <fieldset>
-        <legend>Personal Details</legend>
+    <form class="signup-form" action="mailto:juanmig8@hotmail.com" method="post">
+      <fieldset class="signup-form__information-group">
+        <legend class="signup-form__information-group__title">Personal Details</legend>
         <p>
-          <label for="first-name-input">First Name:</label>
+          <label class="signup-form__field-tag" for="first-name-input">First Name:</label>
           <input required name="first-name" id="first-name-input"/>
         </p>
         <p>
-          <label for="last-name-input">Last Name:</label>
+          <label class="signup-form__field-tag" for="last-name-input">Last Name:</label>
           <input required name="last-name" id="last-name-input"/>
         </p>
         <p>
-          <label for="email-input">Email:</label>
+          <label class="signup-form__field-tag" for="email-input">Email:</label>
           <input required name="email" type="email" id="email-input"/>
         </p>
         <p>
-          <label for="password-input">Password:</label>
+          <label class="signup-form__field-tag" for="password-input">Password:</label>
           <input required type="password" name="password" id="password-input"/>
         </p>
         <p>
-          <label for="DOB-input">Date of Birth:</label>
+          <label class="signup-form__field-tag" for="DOB-input">Date of Birth:</label>
           <input required type="date" name="DOB" id="DOB-input">
         </p>
       </fieldset>
-      <fieldset>
-        <legend>Preferences</legend>
+      <fieldset class="signup-form__information-group">
+        <legend class="signup-form__information-group__title">Preferences</legend>
         <p>
-          <label>How should I call you?</label>
+          <label class="signup-form__field-tag">How should I call you?</label>
         </p>
         <p>
-          <label for="mr-radio">
+          <label class="signup-form__field-tag" for="mr-radio">
             <input required id="mr-radio" type="radio" name="honorific" value="mr" checked>Mr.
           </label>
-          <label for="ms-radio">
+          <label class="signup-form__field-tag" for="ms-radio">
             <input id="ms-radio" type="radio" name="honorific" value="ms">Ms.
           </label>
-          <label for="mrs-radio">
+          <label class="signup-form__field-tag" for="mrs-radio">
             <input id="mrs-radio" type="radio" name="honorific" value="mrs">Mrs.
           </label>
-          <label for="sir-radio">
+          <label class="signup-form__field-tag" for="sir-radio">
             <input id="sir-radio" type="radio" name="honorific" value="sir">Sir
           </label>
         </p>
         <p>
-          <label for="ct-combo">Coffee or Tea?</label>
+          <label class="signup-form__field-tag" for="ct-combo">Coffee or Tea?</label>
           <select name="ctn" id="ct-combo">
             <option value="coffee">Coffee</option>
             <option value="tea">Tea</option>
@@ -58,27 +58,27 @@
           </select>
         </p>
         <p>
-          <label>What ice cream flavors do you like?</label>
+          <label class="signup-form__field-tag">What ice cream flavors do you like?</label>
         </p>
         <p>
-          <label for="flavor1-checkbox">
+          <label class="signup-form__field-tag" for="flavor1-checkbox">
             <input id="flavor1-checkbox" type="checkbox" name="flavor1" value="vanilla"> Vanilla
           </label><br>
-          <label for="flavor2-checkbox">
+          <label class="signup-form__field-tag" for="flavor2-checkbox">
             <input id="flavor2-checkbox" type="checkbox" name="flavor2" value="chocolate"> Chocolate
           </label><br>
-          <label for="flavor3-checkbox">
+          <label class="signup-form__field-tag" for="flavor3-checkbox">
             <input id="flavor3-checkbox" type="checkbox" name="flavor3" value="strawberry"> Strawberry
           </label>
         </p>
         <p>
-          <label for="comment-textarea">Any Comments?</label>
+          <label class="signup-form__field-tag" for="comment-textarea">Any Comments?</label>
         </p>
         <textarea id="comment-textarea" name="comments" rows="10" cols="50"></textarea>
       </fieldset>
-      <div class="flex-left">
-        <input class="cool-button" type="reset" value="Reset">
-        <input class="cool-button" type="submit" value="Beam me up!">
+      <div class="signup-form__actions">
+        <input class="signup-form__actions__button" type="reset" value="Reset">
+        <input class="signup-form__actions__button" type="submit" value="Beam me up!">
       </div>
     </form>
   </body>
