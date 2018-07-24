@@ -1,27 +1,29 @@
-table.custom {
+.report-table {
   border-spacing: 0px;
   border-collapse: collapse;
 }
 
-table.custom * {
-  padding: 5px;
-}
-
-table.custom tbody {
+.report-table__information {
   color: white;
   background-color: #9CB2FF;
   text-align: center;
 }
 
-table.custom .col-title {
+.report-table__information__row-title {
   text-align: left;
   background-color: #9B83E8;
   font-weight: bold;
   color: white;
+  padding: 5px;
 }
 
-table.custom th {
+.report-table__information__cell {
+  padding: 5px;
+}
+
+.report-table__title {
   background-color: #9B83E8;
   text-align: center;
   color: white;
+  padding: 5px;
 }
