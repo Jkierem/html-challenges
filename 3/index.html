@@ -3,40 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Table - Challenge 3</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
-  <style>
-    table {
-      border : 1px solid black;
-    }
-
-    td, th {
-      border: 1px solid black;
-    }
-
-  </style>
   <body>
-    <table>
+    <table class="report-table">
       <thead>
         <tr>
-          <th>January</th>
-          <th>February</th>
-          <th>March</th>
+          <th class="report-table__cell">January</th>
+          <th class="report-table__cell">February</th>
+          <th class="report-table__cell">March</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>38.1</td>
-          <td>39.1</td>
-          <td>37.3</td>
+          <td class="report-table__cell">38.1</td>
+          <td class="report-table__cell">39.1</td>
+          <td class="report-table__cell">37.3</td>
         </tr>
         <tr>
-          <td>34.1</td>
-          <td>35.1</td>
-          <td>34.3</td>
+          <td class="report-table__cell">34.1</td>
+          <td class="report-table__cell">35.1</td>
+          <td class="report-table__cell">34.3</td>
         </tr>
         <tr>
-          <td>34.3</td>
-          <td colspan="2">No data</td>
+          <td class="report-table__cell">34.3</td>
+          <td colspan="2" class="report-table__cell">No data</td>
         </tr>
       </tbody>
     </table>
